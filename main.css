@@ -1,0 +1,53 @@
+.header{
+  background-color: #1a1818;
+}
+.booking-form{
+  text-align: center;
+}
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+      display: none; /* Hide the navbar by default on smaller screens */
+  }
+
+  .logo {
+      text-align: center; /* Center align the logo */
+  }
+
+  .icons {
+      display: flex;
+      justify-content: center; /* Center align the icons */
+      margin-top: 10px; /* Add some space between the logo and icons */
+  }
+
+  .icons i {
+      margin: 0 10px; /* Add spacing between icons */
+  }
+
+  #menu {
+      display: block; /* Display the menu icon */
+  }
+
+ 
+
+
+
+.navbar {
+  display: none;
+}
+
+.show {
+  display: flex; /* Show the navbar */
+  flex-direction: column; /* Display links in a column */
+  align-items: center; /* Center align the links */
+  position: absolute; /* Position the navbar */
+  top: 70px; /* Adjust the top position as needed */
+  left: 0;
+  width: 100%;
+  background-color: #353a35c5; /* Background color of the navbar */
+  z-index: 1; /* Ensure navbar appears on top of other content */
+}
+
+}

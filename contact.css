@@ -1,0 +1,213 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Image section styles */
+.container1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.center-text1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Contact form section styles */
+
+.contact-sectiona {
+    padding-top: 100px;
+}
+.containerA1 {
+    max-width: 800px;
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 150px;
+}
+
+.h2 {
+    text-align: center;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item1 {
+    display: flex;
+    flex-direction: column;
+}
+
+labela {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.comment-section {
+    grid-column: span 3; /* Span across three columns */
+    margin-top: 20px;
+}
+
+.comment-input {
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    margin-bottom: 10px;
+}
+
+.comment-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.comment-submit:hover {
+    background-color: #0056b3;
+}
+
+.comments {
+    margin-top: 10px;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column; /* Display items in a single column */
+    }
+
+    .grid-item {
+        width: 100%; /* Set the width to full for each item */
+        margin-bottom: 10px; /* Add some spacing between items */
+    }
+}
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: none; /* Hide the navbar by default on smaller screens */
+    }
+
+    .logo {
+        text-align: center; /* Center align the logo */
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center; /* Center align the icons */
+        margin-top: 10px; /* Add some space between the logo and icons */
+    }
+
+    .icons i {
+        margin: 0 10px; /* Add spacing between icons */
+    }
+
+    #menu {
+        display: block; /* Display the menu icon */
+    }
+}
+
+
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: none; /* Hide the navbar by default on smaller screens */
+    }
+
+    .logo {
+        text-align: center; /* Center align the logo */
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center; /* Center align the icons */
+        margin-top: 10px; /* Add some space between the logo and icons */
+    }
+
+    .icons i {
+        margin: 0 10px; /* Add spacing between icons */
+    }
+
+    #menu {
+        display: block; /* Display the menu icon */
+    }
+
+   
+
+ 
+
+.navbar {
+    display: none;
+}
+
+.show {
+    display: flex; /* Show the navbar */
+    flex-direction: column; /* Display links in a column */
+    align-items: center; /* Center align the links */
+    position: absolute; /* Position the navbar */
+    top: 70px; /* Adjust the top position as needed */
+    left: 0;
+    width: 100%;
+    background-color: #353a35c5; /* Background color of the navbar */
+    z-index: 1; /* Ensure navbar appears on top of other content */
+}
+
+}

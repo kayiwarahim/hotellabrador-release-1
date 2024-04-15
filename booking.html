@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Booking Form | HL</title>
+
+                    <link rel="stylesheet" href="booking.css">
+                    <link rel="icon" type="image/jpg" href="logo1.png">
+                    <link rel="stylesheet" type="text/css" href="hotel.css"> 
+                    <link rel="stylesheet" href="labradorBook.css">
+                    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+                    <link rel="stylesheet" type="text/css" href="main.css">
+                    <script type="text/javascript" src="hotela.js"> </script>
+                    <link rel="stylesheet" href="contact.css">
+        </head>
+        <body>
+            <header class="header">
+                <a href="#" class="logo">
+                    <img src="logo1.png" alt="Hotel Logo">
+                    <span class="hotel-name"> HOTEL<br>LABRADOR</span>
+                    </a>
+
+                    <nav class="navbar">
+                        <a href="index.html">Home</a>
+                        <div class="dropdown ">
+                            <a class="dropbtn navbar" style="background-color:rgba(0, 0, 0,);;">Rooms</i></a>
+                            <div class="dropdown-content">
+                                <a href="superiorroom.html">Superior Room</a>
+                                <a href="deluxeroom.html">Deluxe Room</a>
+                                <a href="executiveroom.html">Executive Room</a>
+                            </div>
+                        </div>
+                        <a href="contact.html">Contact</a>
+                        <a href="Aboutus.html">About Us</a>  
+                        <a href="booking.html" class="book-now" type="button">Book Now</a>
+                    </nav>
+                <!-- Icons section -->
+                <div class="icons">
+                    <i class="fas fa-bars" id="menu"></i>
+                </div>
+            </header>
+
+                 <h2>FILL IN THE FORM</h2>
+
+                                            <form method="POST">
+                                                    <label for="name">Name:</label><br>
+                                                    <input type="text" id="name" name="name" required><br>
+                                                    
+                                                    <label for="email">Email:</label><br>
+                                                    <input type="email" id="email" name="email" required><br>
+                                                    
+                                                    <label for="checkin">Check-in Date:</label><br>
+                                                    <input type="date" id="checkin" name="checkin" required><br>
+                                                    
+                                                    <label for="checkout">Check-out Date:</label><br>
+                                                    <input type="date" id="checkout" name="checkout" required><br>
+                                                    
+                                                    <label for="rooms">Number of Rooms:</label><br>
+                                                    <input type="number" id="rooms" name="rooms" min="1" required><br>
+                                                    
+                                                    
+                                                        <labela for="title" class="xyz">RoomType </labela><br>
+                                                                        <div>
+                                                                            <select id="title" name="title">
+                                                                                <option value="Superior Room">Superior Room</option>
+                                                                                <option value="Deluxe Room">Deluxe Room</option>
+                                                                                <option value="Executive Room">Executive Room</option>
+                                                                            </select>
+                                                                        </div>  <br><br><br><br>
+                                                    <!--<div > <input type="submit" value="Submit"></div>-->
+                                                    <input type="submit" value="Submit" onclick="msg2()"/> 
+                                            </form>
+
+                        <footer>
+                            <div class="container grid">
+                                <div class="box">
+                                    <img src="pxels-pixabay-260931.jpg" alt="" srcset="">
+                                    <h2 class="footer-heading">Happy Holidays</h2>
+                                    <img src="logo1.png" alt="">
+                                    <p>Discover a haven of serenity.</p>
+                                    <p>Welcome to our hotel, where comfort meets luxury and every moment is tailored to you</p>
+                                    <div class="icon">
+                                        <a href="https://m.facebook.com/p/Hotel-Labrador-100071221791326/r" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/labradorhotel/" target="_blank"><i class="fab fa-instagram" href="instagram.com"></i></a>
+                                        <a href="https://twitter.com/hotellabrador" target="_blank"><i class="fab fa-twitter" ></i></a>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="box">
+                                    <h2 class="footer-heading ">Links</h2>
+                                    <div class="linka">
+                                        <ul>
+                                            <li><a href="index.html"><af >Home</af></a></li>
+                                            <li><a href="Rooms.html"><af >Rooms</af></a></li>
+                                            <li><a href="Aboutus.html"><af >About Us</af></a></li>
+                                            <li><a href="contact.html"><af >Contact</af></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="box">
+                                    <h2 class="footer-heading">Contact us</h2>
+                                    <div>
+                                        <i class="fa fa-phone "> <p> +256 647 524 332</p></i>
+                                        
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-envelope "> <p>inquiry@hotellabrador.com</p></i>
+                                    
+                                    </div>
+                                    <div>
+                                        <!-- Anchor tag with the embedded iframe for the map -->
+                                        <a href="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d15947.279010093618!2d32.58837709752651!3d0.31823490442725956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x177dbeba8621ad07%3A0xa35c3967c347a5b3!2sKampala%20Serena%20Hotel!3m2!1d0.3153727!2d32.5882088!4m5!1s0x177dbeba8621ad07%3A0xa35c3967c347a5b3!2sKampala%20Serena%20Hotel!3m2!1d0.3153727!2d32.5882088!5e0!3m2!1sen!2s!4v1647835809120!5m2!1sen!2s" target="_blank">
+                                            <!-- Embedded iframe for the map -->
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d15947.279010093618!2d32.58837709752651!3d0.31823490442725956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x177dbeba8621ad07%3A0xa35c3967c347a5b3!2sKampala%20Serena%20Hotel!3m2!1d0.3153727!2d32.5882088!4m5!1s0x177dbeba8621ad07%3A0xa35c3967c347a5b3!2sKampala%20Serena%20Hotel!3m2!1d0.3153727!2d32.5882088!5e0!3m2!1sen!2s!4v1647835809120!5m2!1sen!2s" width="300" height="225" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                        </a>
+                                        <p>Upper Kololo Terace, Kampala, Uganda</p>
+                                    </div>
+                                
+                                </div>
+                                
+
+                                <!-- New box for Like Us and star rating -->
+                                <div class="box">
+                                    <h2 class="footer-heading">Rate Us</h2>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating" id="star5" value="5">
+                                        <label for="star5"><i class="fas fa-star"></i></label>
+                                        <input type="radio" name="rating" id="star4" value="4">
+                                        <label for="star4"><i class="fas fa-star"></i></label>
+                                        <input type="radio" name="rating" id="star3" value="3">
+                                        <label for="star3"><i class="fas fa-star"></i></label>
+                                        <input type="radio" name="rating" id="star2" value="2">
+                                        <label for="star2"><i class="fas fa-star"></i></label>
+                                        <input type="radio" name="rating" id="star1" value="1">
+                                        <label for="star1"><i class="fas fa-star"></i></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+            <div class="legal">
+                <p class="container">&copy; 2024 Labrador Hotel. All rights reserved.</p>
+            </div>
+            <script src="facilities.js"></script>
+            <script type="text/javascript" src="booking.js"> </script>
+        </body>
+    </html>

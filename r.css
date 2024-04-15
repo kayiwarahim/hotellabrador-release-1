@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: var(--box-shadow);
+    z-index: 100;
+}
+
+
+header {
+    padding-left: 20px; /* Adjust the left padding of the header */
+  }
+  
+  /* Target the logo within the header */
+  header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    margin-right: 100px;
+  }
+  
+  header .logo img {
+    width: 40px; /* Adjust the width of the logo image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between the logo and text */
+  }
+  
+  header .logo span {
+    font-size: 20px; /* Adjust font size */
+    color: #cdaa7c; /* Adjust text color */
+    font-weight: bold; /* Adjust font weight if needed */
+  }
+
+
+  
+header .navbar a {
+    font-size: 1.7rem;
+    padding: .5rem 1.5rem;
+    color: #cdaa7c;
+    border: .1rem solid transparent;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+    color: #fff;
+    border: .1rem solid rgba(250, 247, 247, 0.1);
+}
+
+header .icons i {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    background: #cdaa7c;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #333;
+    border-radius: 50%;
+}
+
+header .icons i:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+#menu {
+    display: none;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(216, 50, 50);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: burlywood;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.home-page1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Five columns */
+    grid-gap: 10px; /* Adjust the gap between items */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 0px; /* Adjust margin-top as needed */
+    background-image: url('ibra.jpg');
+    filter: brightness(70%);
+    background-size: cover; /* Cover the entire container */
+    background-position: center;
+    height: 500px; /* Set the height of the container to match the image */
+    padding-top: 66px;
+}
+.home-page2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Five columns */
+    grid-gap: 10px; /* Adjust the gap between items */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 0px; /* Adjust margin-top as needed */
+    background-image: url('HA.jpg');
+    filter: brightness(120%);
+    background-size: cover; /* Cover the entire container */
+    background-position: center;
+    
+    height: 500px; /* Set the height of the container to match the image */
+    padding-top: 66px;
+}
+.home-page3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Five columns */
+    grid-gap: 10px; /* Adjust the gap between items */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 0px; /* Adjust margin-top as needed */
+    background-image: url('roomspage_hero.jpg');
+    background-size: cover; /* Cover the entire container */
+    background-position: center;
+    filter: brightness(70%);
+    height: 500px; /* Set the height of the container to match the image */
+    padding-top: 66px;
+}
+.room {
+    text-align: center;
+    color: #cdaa7c;;
+    margin-bottom: 100px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.room img {
+    width: 50px;
+    height: 50px;
+    /* Adjust the negative margin to reduce the separation */
+}
+
+h1 {
+    grid-column: 1 / -1; /* Span all columns */
+    text-align: center; /* Center the text */
+    margin-top: 50px; /* Adjust the margin-top as needed */
+    font-size: 60px; /* Adjust the font size */
+    color: #cdaa7c;; /* Text color */
+    position: relative; /* Ensure the positioning works */
+    z-index: 1; /* Ensure it's on top of other elements */
+}
+
+.left-content {
+    float: left; /* Float left */
+    width: 30%; /* Adjust width as needed */
+    margin-left: 50px; /* Adjust margin-left to bring it closer to the center */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    /* Remove the margin-bottom set by default */
+    margin-bottom: 0;
+}
+
+
+.bath,
+.air-conditioning,
+.kitchen,
+.living-room,
+.bar {
+    text-align: center;
+    margin: 10px; /* Adjust margin as needed */
+    width: 100px; /* Set width of container */
+}
+
+.bath img,
+.air-conditioning img,
+.kitchen img,
+.living-room img,
+.bar img {
+    width: 50px; /* Set width of image */
+    height: 50px; /* Set height of image */
+    display: block;
+    margin: 0 auto; /* Center image horizontally */
+}
+
+.bath h4,
+.air-conditioning h4,
+.kitchen h4,
+.living-room h4,
+.bar h4 {
+    margin-top: 5px; /* Adjust margin as needed */
+}
+
+
+.suite-description {
+    overflow: hidden; /* Clear floats */
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.left-content {
+    float: left; /* Float left */
+    width: 40%; /* Adjust width as needed */
+    margin-left: 100px;
+    font-size: 30px;
+    
+}
+
+.right-content {
+    float: right; /* Float right */
+    width: 40%; /* Adjust width as needed */
+    margin-right: 30px;
+    margin-top: 100px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* Define styles for the top bar container */
+
+.image-container {
+    padding: 10px;
+    width: 450px; /* Adjust width as needed */
+    float: left;
+}
+
+.image-container img {
+    width: 100%; /* Set the width of the image to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.topbar {
+    background-color: none;
+    padding-top: 10px;
+    width: calc(100% - 500px); /* Adjust width as needed (subtracting space for the image container and padding) */
+    float: right;
+    margin-top: 0px;
+}
+
+
+/* Define styles for individual items within the top bar */
+.topbar-item {
+    display: block;
+    margin-bottom: 10px; /* Adjust margin as needed */
+    text-decoration: none;
+    color: #333; /* Set text color as desired */
+}
+
+.topbar-item .icon {
+    color: burlywood;
+}
+
+.topbar h1 {
+    color: burlywood;
+    font-family: "Great Vibes" , cursive;
+    font-weight: 400 ;
+}
+
+.topbar p {
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+/* Define styles for the separator */
+.separator {
+    width: 100%; /* Set width of the separator to 100% */
+    height: 1px; /* Set height of the separator */
+    background-color: #ccc; /* Set color of the separator */
+    margin: 5px 0; /* Adjust margin as needed */
+}
+
+/* Additional styles for icons */
+.icon {
+    margin-right: 5px; /* Adjust margin as needed */
+}
+
+/* Additional styles for span */
+.span {
+    vertical-align: middle; /* Align text vertically */
+}
+
+.tours {
+    text-align: center; /* Center the content */
+    margin-bottom: 20px; /* Add some space between the heading and the slider */
+  }
+  
+  .tours h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Set the text color */
+    margin: 0; /* Remove default margin */
+  }
+  
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  background-color: #e4ccad;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-image: url(H7.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for distance from margins */
+  }
+  
+  .swiper-slide img {
+    max-width: calc(100% - 40px); /* Set max-width to ensure some distance from margins */
+    max-height: calc(100% - 40px); /* Set max-height to ensure some distance from margins */
+    object-fit: cover;
+  }
+
+/* Change color of navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #cdaa7c; /* Change to your desired color */
+}
+
+/* Change color of pagination bullets */
+.swiper-pagination-bullet {
+    background-color: #cdaa7c; /* Change to your desired color */
+  }
+  
+  .gallery-heading {
+    position: absolute;
+    top: -50px; /* Adjust the top position as needed */
+    left: 10%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure it's above the slider */
+    font-family: "Great Vibes" ,cursive;
+    font-weight: 400;
+}
+
+
+.go-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    margin-top: 20px;
+}
+
+.go-back i {
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .suite-description {
+        flex-direction: column; /* Change the flex-direction to column */
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%; /* Each container takes up 100% of the row */
+    }
+
+    
+    .right-content {
+        
+        text-align: center;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column; /* Stack the containers on smaller screens */
+    }
+
+    .image-container,
+    .topbar {
+        flex-basis: 100%; /* Each container takes up 100% of the width on smaller screens */
+    }
+
+    .topbar {
+        margin-top: 20px; /* Add margin between rows */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .topbar {
+        /* Adjust the display property to make the topbar visible */
+        display: block;
+        /* You may need to adjust other styles such as positioning or width */
+        width: 100%; /* Adjust the width as needed */
+        position: static; 
+        
+        text-align: center;
+    }
+}
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: none; /* Hide the navbar by default on smaller screens */
+    }
+
+    .logo {
+        text-align: center; /* Center align the logo */
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center; /* Center align the icons */
+        margin-top: 10px; /* Add some space between the logo and icons */
+    }
+
+    .icons i {
+        margin: 0 10px; /* Add spacing between icons */
+    }
+
+    #menu {
+        display: block; /* Display the menu icon */
+    }
+}
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: none; /* Hide the navbar by default on smaller screens */
+    }
+
+    .logo {
+        text-align: center; /* Center align the logo */
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center; /* Center align the icons */
+        margin-top: 10px; /* Add some space between the logo and icons */
+    }
+
+    .icons i {
+        margin: 0 10px; /* Add spacing between icons */
+    }
+
+    #menu {
+        display: block; /* Display the menu icon */
+    }
+
+   
+
+ 
+
+.navbar {
+    display: none;
+}
+
+.show {
+    display: flex; /* Show the navbar */
+    flex-direction: column; /* Display links in a column */
+    align-items: center; /* Center align the links */
+    position: absolute; /* Position the navbar */
+    top: 70px; /* Adjust the top position as needed */
+    left: 0;
+    width: 100%;
+    background-color: #353a35c5; /* Background color of the navbar */
+    z-index: 1; /* Ensure navbar appears on top of other content */
+}
+
+}

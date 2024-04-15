@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;padding-top: 66px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #cdaa7c;;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+  font-weight: bold;
+}
+.xyz{
+  font-weight: bold;
+  font-size: 24px;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.dropdown{
+  position: relative;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: aqua;
+  min-width: 100%;
+  z-index: 100000;
+}
+.dropdown-content ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+      display: none; /* Hide the navbar by default on smaller screens */
+  }
+
+  .logo {
+      text-align: center; /* Center align the logo */
+  }
+
+  .icons {
+      display: flex;
+      justify-content: center; /* Center align the icons */
+      margin-top: 10px; /* Add some space between the logo and icons */
+  }
+
+  .icons i {
+      margin: 0 10px; /* Add spacing between icons */
+  }
+
+  #menu {
+      display: block; /* Display the menu icon */
+  }
+
+ 
+
+
+
+.navbar {
+  display: none;
+}
+
+.show {
+  display: flex; /* Show the navbar */
+  flex-direction: column; /* Display links in a column */
+  align-items: center; /* Center align the links */
+  position: absolute; /* Position the navbar */
+  top: 70px; /* Adjust the top position as needed */
+  left: 0;
+  width: 100%;
+  background-color: #353a35c5; /* Background color of the navbar */
+  z-index: 1; /* Ensure navbar appears on top of other content */
+}
+
+}
